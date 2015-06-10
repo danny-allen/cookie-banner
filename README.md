@@ -9,7 +9,7 @@ This script was based on Creare's 'Implied Consent' EU Cookie Law Banner v:2.4 b
 
 	//instantiate cookie
 	var cookieBanner = new namespace.CookieBanner({
-		//change settings here
+		//configure options here - see below
 		duration: 28,
 	});
 
@@ -22,3 +22,20 @@ This script was based on Creare's 'Implied Consent' EU Cookie Law Banner v:2.4 b
 		//remove the banner (setting a cookie to remember)
 		cookieBanner.removeMe();
 	});
+
+## Options
+
+| Option 	    		| Default value    					| Description   														|
+| --------------------- |-----------------------------------| ----------------------------------------------------------------------|
+| dropColumn    		| true								| False disables the Cookie, allowing you to style the banner			|
+| duration      		| 14		    					| Number of days before the cookie expires, and the banner reappears	|
+| cookieName    		| 'complianceCookie'      			| Name of our cookie   													|
+| cookieValue    		| 'on'		    					| Value of cookie  														|
+| parentElement   		| $('body')      					| Selector within which to insert the cookie notice   					|
+| prepend    			| true		      					| Prepend to the selector element (if false, append)  					|
+| content    			| *(HTML string)   					| Content for the cookie banner   										|
+| closeElementSelector  | '.cookie-banner' 					| Close element selector   												|
+| closeElementContent   | *(HTML string)   					| Content for the close elemenent   									|
+| bannerClass    		| 'cookie-banner'  					| Class to attach to the banner   										|
+
+\* HTML string - not an actual value, but represents the type of value, see the object for actual value.
