@@ -1,3 +1,6 @@
+//Author: Danny Allen
+//Version 1.0
+
 // This script was based on:
 //    Creare's 'Implied Consent' EU Cookie Law Banner v:2.4
 //    Conceived by Robert Kent, James Bavington & Tom Foyster
