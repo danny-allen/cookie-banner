@@ -7,7 +7,7 @@ This script was based on Creare's 'Implied Consent' EU Cookie Law Banner v:2.4 b
 
 ## Usage
 
-``` //instantiate cookie
+	//instantiate cookie
 	var cookieBanner = new namespace.CookieBanner({
 		//change settings here
 		duration: 28,
@@ -22,4 +22,3 @@ This script was based on Creare's 'Implied Consent' EU Cookie Law Banner v:2.4 b
 		//remove the banner (setting a cookie to remember)
 		cookieBanner.removeMe();
 	});
-```
