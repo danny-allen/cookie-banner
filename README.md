@@ -4,6 +4,11 @@
 
 This script was based on Creare's 'Implied Consent' EU Cookie Law Banner v:2.4 but was heavily altered and refactored for more options and to use jQuery.
 
+## Installing
+
+Just include the cookie-banner.js file. Or if you are using bower, you can run:
+
+	```bower install git@github.com:danny-allen/cookie-banner.git --save```
 
 ## Usage
 
