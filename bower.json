@@ -1,15 +1,16 @@
 {
     "name": "cookie-banner",
-    "main": ["slick/slick.min.js", "slick/slick.css", "slick/slick-theme.css", "slick/fonts/*"],
-    "version": "1.4.0",
-    "homepage": "https://github.com/kenwheeler/slick",
+    "main": ["cookie-banner.js"],
+    "version": "1.0",
+    "homepage": "https://github.com/danny-allen/cookie-banner",
     "authors": [
-        "Ken Wheeler <ken_wheeler@me.com>"
+        "Danny Allen"
     ],
-    "description": "the last carousel you'll ever need",
+    "description": "Cookie banner with Options. This script was based on Creare's 'Implied Consent' EU Cookie Law Banner v:2.4 but was heavily altered and refactored for more options and to use jQuery.",
     "keywords": [
-        "responsive",
-        "carousel",
+        "cookie banner",
+        "cookie policy",
+        "cookie",
         "jquery"
     ],
     "license": "MIT",
