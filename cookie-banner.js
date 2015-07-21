@@ -10,7 +10,7 @@
 //IF YOU NEED TO EDIT THIS...
 //In short, dont. Add a pull request to the repo.
 
-var namespace = namespace || {};
+var Helpers = Helpers || {};
 
 (function($, window, document, undefined) {
 
@@ -24,7 +24,7 @@ var namespace = namespace || {};
      * 
      * @param object options User defined options to overwrite the default settings.
      */
-    namespace.CookieBanner = function(options) {
+    Helpers.CookieBanner = function(options) {
 
         //define default settings
         this._s = {
@@ -74,7 +74,7 @@ var namespace = namespace || {};
      * 
      * Initial functionality and var declarations.
      */
-    namespace.CookieBanner.prototype.init = function(){
+    Helpers.CookieBanner.prototype.init = function(){
 
         //if cookie doesnt exist, or isnt of the same value, then create div
         if(this.checkCookie(this._s.cookieName) !== this._s.cookieValue){
@@ -91,7 +91,7 @@ var namespace = namespace || {};
      *
      * Create the banner div and show it.
      */
-    namespace.CookieBanner.prototype.createDiv = function(){
+    Helpers.CookieBanner.prototype.createDiv = function(){
 
         //create the banner
         this._banner = $('<div />').hide();
@@ -123,7 +123,7 @@ var namespace = namespace || {};
      * @param  string   value Value to store in the cookie.
      * @param  int      days  Amount of days untill the cookie expires.
      */
-    namespace.CookieBanner.prototype.createCookie = function(name,value,days) {
+    Helpers.CookieBanner.prototype.createCookie = function(name,value,days) {
 
         //define expires
         var expires;
@@ -158,7 +158,7 @@ var namespace = namespace || {};
      * @param  string name Name of the cookie to check for.
      * @return boolean/string      false if not found.
      */
-    namespace.CookieBanner.prototype.checkCookie = function(name) {
+    Helpers.CookieBanner.prototype.checkCookie = function(name) {
 
         //name equals
         var nameEQ = name + '=';
@@ -189,7 +189,7 @@ var namespace = namespace || {};
      * 
      * @param  string name The name of the cookie to remove.
      */
-    namespace.CookieBanner.prototype.eraseCookie = function(name) {
+    Helpers.CookieBanner.prototype.eraseCookie = function(name) {
 
         //remove cookie
         this.createCookie(name,'', -1);
@@ -201,7 +201,7 @@ var namespace = namespace || {};
      *
      * Hides the banner and creates a cookie to remember to hide it.
      */
-    namespace.CookieBanner.prototype.removeMe = function(){
+    Helpers.CookieBanner.prototype.removeMe = function(){
 
         //create the cookie, so we dont show the banner again
         this.createCookie( this._s.cookieName, this._s.cookieValue, this._s.duration); // Create the cookie
