@@ -8,10 +8,13 @@ This script was based on Creare's 'Implied Consent' EU Cookie Law Banner v:2.4 b
 
 Just include the cookie-banner.js file. Or if you are using bower, you can run:
 
+```bash
 	bower install git@github.com:danny-allen/cookie-banner.git --save
+```
 
 ## Usage
 
+```js
 	//instantiate cookie
 	var cookieBanner = new namespace.CookieBanner({
 		//configure options here - see below
@@ -27,6 +30,8 @@ Just include the cookie-banner.js file. Or if you are using bower, you can run:
 		//remove the banner (setting a cookie to remember)
 		cookieBanner.removeMe();
 	});
+```
+
 
 ## Options
 
